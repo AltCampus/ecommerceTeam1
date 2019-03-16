@@ -70,10 +70,11 @@ a {
 :root {
     font-size: 16px;
     font-family: "Lato", sans-serif;
-    --primary: 
-    --secondary:
-    --tertiary:
-    --bg: 
+    --primary: #fff;
+    --secondary: #1c1c21;
+    --primaryLink:#f66;
+    --primaryText: #c9cdcf;
+    --bg: #f7f7f7;
   }
   /* Main CSS */
   
