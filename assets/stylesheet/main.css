@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -70,14 +70,14 @@ a {
 :root {
     font-size: 16px;
     font-family: "Lato", sans-serif;
-    --primary: #fff;
-    --secondary: #1c1c21;
-    --primaryLink:#f66;
-    --primaryText: #c9cdcf;
-    --bg: #f7f7f7;
+    --primary: #fff;  /*white*/
+    --secondary: #1c1c21;  /*black*/
+    --primaryLink:#f66;  /*red|orange*/
+    --primaryText: #c9cdcf;  /*grey text*/
+    --bg: #f7f7f7;  /*greyish background*/
   }
   /* Main CSS */
-  
+
   /* General CSS */
   h1 {
     font-size: 3rem;
@@ -111,3 +111,234 @@ a {
     line-height: 1.5;
   }
 
+/* Shreyansh */
+.mainPageAdd, .mainP,
+.mainCurrentPage, .offer, .saleContainer, .mainGraph, .review, .blogContainer {
+  color: #a299a4; }
+
+.mainH1, .offerHeading, .saleHeading, .productsHeading {
+  font-size: 2rem;
+  color: var(--secondary);
+  margin-bottom: 2rem; }
+
+.mainWelcome, .mainOffer, .reviewContainer, .mainProducts, .blogMainContainer {
+  text-align: center; }
+
+/* main address nav bar */
+.mainNav {
+  background-color: var(--bg);
+  padding: 1.25rem;
+  font-size: 1rem; }
+
+.mainNavHome {
+  color: var(--primaryLink); }
+
+.mainWelcome {
+  background-color: var(--bg);
+  padding: 5rem; }
+
+.mainP,
+.mainCurrentPage {
+  width: 80%;
+  margin: 0 auto 1rem auto; }
+
+/* Main OFFER */
+.mainOffer {
+  background-color: var(--primary);
+  padding: 4rem; }
+
+.offerContainer {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.offerIcon {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: var(--primaryLink); }
+
+.offerName {
+  margin-bottom: 1rem;
+  color: var(--secondary);
+  font-size: 1rem; }
+
+.offer {
+  max-width: 15rem;
+  width: 30%;
+  height: 18rem;
+  background-color: var(--bg);
+  margin-right: 2rem;
+  padding: 1.5rem;
+  box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.25); }
+
+.offerMiddle {
+  background-color: red; }
+  .offerMiddle .offerIcon,
+  .offerMiddle .offerDescription {
+    color: var(--primary); }
+
+/* main sale */
+.mainSale {
+  background-color: var(--bg); }
+
+.saleShoes {
+  height: auto;
+  width: 100%; }
+
+.saleContainer {
+  margin: 0 auto;
+  padding: 4rem;
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 4rem;
+  line-height: 2rem; }
+
+.saleCaption {
+  font-size: 0.7rem; }
+
+.saleDescription {
+  margin-bottom: 2rem; }
+
+.saleTick {
+  color: var(--primaryLink); }
+
+.saleOfferList {
+  list-style-type: none;
+  color: #70889b; }
+
+/* Main Graph */
+.mainGraph {
+  background-color: var(--primary);
+  font-size: 1rem; }
+
+.mainGraphContainer {
+  width: 80%;
+  margin: 0 auto;
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 12fr;
+  grid-auto-rows: 6rem;
+  grid-row-gap: 1.5rem; }
+
+.graphIcon {
+  align-self: center;
+  font-size: 1.5rem;
+  color: #0a77f8; }
+
+.graphHeading {
+  font-size: 1rem;
+  color: var(--secondary);
+  margin-bottom: 0.5rem; }
+
+.graphDescription {
+  line-height: 2rem; }
+
+/* main review */
+.mainReview {
+  background-color: var(--bg); }
+
+.reviewContainer {
+  width: 80%;
+  margin: 0 auto;
+  padding: 4rem; }
+
+.reviewName {
+  font-size: 1.2rem;
+  margin-bottom: 1rem; }
+
+.reviewStars {
+  color: var(--primaryLink);
+  margin-bottom: 2rem; }
+
+.review {
+  font-size: 1rem;
+  line-height: 2rem; }
+
+.reviewQuotes {
+  font-size: 2rem; }
+
+/* main popular products */
+.mainProducts {
+  background-color: var(--primary);
+  padding: 4rem; }
+
+.productsGrid {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 20vh 20vh;
+  grid-gap: 2rem; }
+
+.productsContainer {
+  position: relative;
+  border: 1px solid #a299a4;
+  padding: 1.5rem; }
+
+.productsContainer:first-of-type {
+  grid-row: 1/-1;
+  grid-column: 1/2; }
+
+.productsShopNowLink {
+  position: absolute;
+  bottom: 10%;
+  right: 10%; }
+
+.productsImg {
+  width: 100%;
+  height: 100%; }
+
+/* Blog Posts */
+.blogMainContainer {
+  padding: 3rem; }
+
+.blogContainer {
+  width: 80%;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+
+.blog {
+  border: 1px solid #a299a4;
+  width: 30%;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; }
+
+.blogImage {
+  width: 100%;
+  height: auto; }
+
+.blogContentContainer {
+  padding: 0.8rem; }
+
+.blogHeading {
+  color: var(--secondary);
+  font-size: 1.3rem;
+  margin-bottom: 1.9rem; }
+
+.blogDescription {
+  font-size: 1rem;
+  line-height: 1.8rem;
+  margin-bottom: 1rem; }
+
+.blogFooter {
+  display: flex;
+  justify-content: space-between; }
+
+.blogPrice {
+  font-size: 1.3rem; }
+
+.blogViewMoreButton {
+  padding: 0.5rem;
+  background-color: var(--primary);
+  box-shadow: 0 0 1rem 0.5rem var(--primaryText); }
+
+.blogViewMoreLink {
+  color: var(--primaryLink); }
