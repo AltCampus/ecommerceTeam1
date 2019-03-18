@@ -384,6 +384,8 @@ a {
   color: var(--primary);
 }
 
+
+
 .sub-menu {
   position: absolute;
   background: var(--tertiary);
@@ -642,32 +644,43 @@ a {
 .footerright p {
   margin-top: 1rem;
 }
-.form-atting {
+/*.form-atting {
   width: 100%;
   display: block;
   margin-top: 1rem;
   margin-bottom: 1.5rem;
+}*/
+
+.form-atting {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
 
-.newsletter {
-  width: 88%;
-  display: inline;
-}
 
 
 form input, textarea {
-  padding: 0.9rem;
+  padding: 1.4rem;
   font-size: 1rem;
   border: none;
   background: #efeded;
-  margin-right: -.2em;
+  width: 100%;
+  /*margin-right: -.2em;*/
 }
 .btn3 {
-  padding: 0.9rem 2rem;
   background: #232a32;
   width: 10%;
-  display: inline;
+  padding: 0.2rem 0rem;
 }
+
+.footerform {
+  width: 100%;
+}
+
+.newsletter {
+  /*padding: 1.4em;*/
+}
+
 .fa-paper-plane {
   color: #d52c39;
 }
@@ -719,28 +732,32 @@ form input, textarea {
 
 form > * {
   display: block;
-  margin: 1.2rem 0;
+  /*margin: 1.2rem 0;*/
   font-size: 1rem;
   width: 95%;
+}
+
+.contactform input, .contactform textarea {
+  margin: 1.2rem 0;
 }
 .form-group textarea {
   width: 100%;
 }
 
-.contactcomment:focus ,
+.contactcomment:focus , 
 .flexemail:focus ,
 .flexname:focus {
   outline: 2px solid #6f42c1;
   outline-style: solid;
   outline-color: invert;
-}
+} 
 
 
 .btn4 {
   background: black;
   color: white;
   font-size: 0.8rem;
-  padding: 1rem 2rem;
+  padding: 1rem 2rem; 
   font-weight: bold;
 }
 .contact_wrapper {
@@ -805,9 +822,10 @@ iframe {
 
 .spsection {
   margin: 0 auto;
+  /*text-align: center;*/
 }
 .spmain {
-  /*text-align: center;*/
+  text-align: center;
   margin: 0 auto;
   padding: 2rem 0rem;
   width: 100%;
@@ -815,7 +833,7 @@ iframe {
 .sptitle {
   text-align: center;
   font-size: 2.3em;
-  font-weight: 400;
+  font-weight: 400; 
 }
 .spimage {
   margin-top: 3rem;
@@ -865,9 +883,13 @@ iframe {
 
 /* comments */
 
-/*.comments {
-  width: 90%;
-}*/
+.formcontainer {
+  width: 100%;
+}
+
+.contactcomment, .flexemail, .flexname {
+  margin-top: 1em;
+}
 .form-group {
   width: 100%;
 }
@@ -885,6 +907,7 @@ iframe {
   display: flex;
   width: 100%;
   justify-content: space-between;
+  margin-bottom: 1.5em;
 }
 .flex1, .flex2 {
   flex: 1;
@@ -951,7 +974,7 @@ label {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    margin: 1rem;
+    /*margin: 1rem;*/
     justify-content: space-evenly;
 }
 
