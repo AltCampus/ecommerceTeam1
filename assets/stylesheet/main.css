@@ -73,19 +73,11 @@ a {
 :root {
     font-size: 16px;
     font-family: "Lato", sans-serif;
-<<<<<<< HEAD
     --primary: #fff;  /*white*/
     --secondary: #1c1c21;  /*black*/
     --primaryLink:#f66;  /*red|orange*/
     --primaryText: #c9cdcf;  /*grey text*/
     --bg: #f7f7f7;  /*greyish background*/
-=======
-    --primary: #fff;
-    --secondary: #1c1c21;
-    --primaryLink: #f66;
-    --primaryText: #c9cdcf;
-    --bg: #f7f7f7;
->>>>>>> a1d592d54af745fc5868c4263d641bd5d9375640
   }
   /* Main CSS */
 
@@ -354,7 +346,7 @@ a {
 .blogViewMoreLink {
   color: var(--primaryLink); }
 
-/* Venkat */
+/* Venkat===================================================== */
 .wrapper {
   max-width: 1370px;
   width: 100%
